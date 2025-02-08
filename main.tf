@@ -24,3 +24,20 @@ provider "azurerm" {
 provider "cloudinit" {
   # Configuration options
 }
+
+# Define config variables
+variable "labelPrefix" {
+  type        = string
+  description = "This is my algonquin username - wair0001"
+}
+
+variable "region" {
+  default     = "westus"
+  description = "Azure region for deployment"
+}
+
+variable "admin_username" {
+  type        = string
+  default     = "azureadmin"
+  description = "This is the username to be used by the administrator."
+}
